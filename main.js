@@ -1,5 +1,6 @@
 const fs = require('fs');
 const Discord = require('discord.js');
+const creds = require('./creds.js');
 
 const testClient = new Discord.Client();
 testClient.commands = new Discord.Collection();
@@ -33,20 +34,7 @@ testClient.on("message", function(message) {
         console.error(error);
         message.reply('there was an error trying to execute that command!');
     }
-
-    // old way: just handle here
-    // if (command === "ping") {
-    //     testClient.commands.get('ping').execute(message, args);
-    // }
-
 });
 
-
-
-
-
-
-
-
-testClient.login('ODEyNTM0NTAyNTYyODU2OTgx.YDCJuQ.aSmT-zola4xB0qtOUUR-hsUn3QI');
+testClient.login(creds.token);
 
