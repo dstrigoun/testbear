@@ -9,6 +9,8 @@
   "author": "Dasha",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.5.1"
+    "axios": "^0.21.1",
+    "discord.js": "^12.5.1",
+    "node": "^15.8.0"
   }
 }

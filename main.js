@@ -12,7 +12,7 @@ for (const file of commandFiles) {
     testClient.commands.set(command.name, command);
 }
 
-const prefix = "!";
+const prefix = "/";
 
 testClient.once('ready', () => {
     console.log('weeee onlineee');
